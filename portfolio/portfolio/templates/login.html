@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      body {
+        background-image: url(https://img1.wallspic.com/crops/9/6/3/3/6/163369/163369-nature-deer-natural_environment-natural_landscape-antler-1920x1080.png);
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 60px;
+        margin-top: 100px;
+      }
+
+      label {
+        display: block;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+      }
+
+      form {
+        width: 30%;
+        margin: auto;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+
+      form {
+        padding: 20px;
+      }
+
+      input {
+        border-radius: 6px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+      }
+
+      input:hover {
+        border-color: rgb(0, 183, 255);
+      }
+
+      input:focus {
+        border-color: rgb(0, 81, 255);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="" method="POST">
+      <label for="name"
+        >Username:<input
+          type="text"
+          placeholder="user-name"
+          id="name"
+          name="name"
+      /></label>
+      <label for="password"
+        >Password:<input
+          type="text"
+          placeholder="password"
+          id="password"
+          name="password"
+      /></label>
+      <input type="submit" id="submit" name="submit" value="Sign-in" />
+    </form>
+  </body>
+</html>

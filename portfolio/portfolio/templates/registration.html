@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <style>
+      body {
+        background-image: url(https://img1.wallspic.com/crops/9/6/3/3/6/163369/163369-nature-deer-natural_environment-natural_landscape-antler-1920x1080.png);
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 60px;
+        margin-top: 30px;
+      }
+
+      label {
+        display: block;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+      }
+
+      form {
+        width: 30%;
+        margin: auto;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+
+      form {
+        padding: 20px;
+      }
+
+      textarea {
+        display: block;
+        resize: none;
+      }
+
+      input,
+      textarea {
+        border-radius: 6px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+      }
+
+      input:hover,
+      textarea:hover {
+        border-color: rgb(0, 183, 255);
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: rgb(0, 81, 255);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration</h1>
+    <form action="" method="POST">
+      <label for="name">
+        Enter Your Full Name:
+        <input type="text" placeholder="Your Name" id="name" name="name" />
+      </label>
+      <label for="age">
+        Enter Your Age:
+        <input type="text" placeholder="Your Age" id="age" name="age" />
+      </label>
+      <label for="email">
+        Email Address:
+        <input type="text" placeholder="Email" id="email" name="email" />
+      </label>
+      <label for="location">
+        Country/Location:
+        <input
+          type="text"
+          placeholder="Country"
+          id="location"
+          name="location"
+        />
+      </label>
+      <label>
+        Bio or Description:
+        <textarea
+          placeholder="A short description about yourself, your work, or goals"
+          rows="3"
+          cols="40"
+        ></textarea>
+      </label>
+      <label for="username">
+        Username:
+        <input
+          type="text"
+          placeholder="user-name"
+          id="username"
+          name="username"
+        />
+      </label>
+      <label for="pass">
+        Password:
+        <input
+          type="text"
+          placeholder="Select Password"
+          id="pass"
+          name="pass"
+        />
+      </label>
+      <label for="passConf">
+        Confirm Password:
+        <input
+          type="text"
+          placeholder="Select Password"
+          id="passConf"
+          name="passConf"
+        />
+      </label>
+
+      <input type="submit" id="submit" name="submit" value="Register" />
+    </form>
+  </body>
+</html>

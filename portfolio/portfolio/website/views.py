@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
+from django.contrib.auth import authenticate, login
 
 User = get_user_model()
 
@@ -34,6 +35,15 @@ def signUpPage(request):
     return render(request, 'registration.html')
 
 def loginPage(request):
+    if request.method == 'POST':
+        login_username = request.POST.get('name')
+        login_pass = request.POST.get('password')
+        user = authenticate(request, username = login_username, password = login_pass)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            return HttpResponse("Password Incorrect!")
     return render(request, 'login.html')
 
 def homePage(request):

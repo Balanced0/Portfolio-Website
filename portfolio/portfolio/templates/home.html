@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>User Information</title>
+    <style>
+        body{
+            background-image: url(https://img1.wallspic.com/crops/9/6/3/3/6/163369/163369-nature-deer-natural_environment-natural_landscape-antler-1920x1080.png);
+        }
+
+        h1{
+            text-align: center;
+            margin-top:50px;
+            margin-bottom:50px;
+            color: rgb(255, 255, 255);
+        }
+
+        .box{
+            width: 30%;
+            margin: auto;
+            background: linear-gradient(
+              135deg,
+              rgba(255, 255, 255, 0.1),
+              rgba(255, 255, 255, 0)
+            );
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .box{
+            padding: 20px;
+        }
+
+        p{
+            font-family: helvetica;
+            color: white;
+            font-weight: bold;
+            text-shadow:
+                0 0 2px #fff,
+                0 0 5px #fff,
+                0 0 10px #e5e5e5,
+                0 0 15px #e5e5e5;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>User Information</h1>
+    <div class="box">
+        <div></div>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Age:</strong> {{ user.age }}</p>
+        <p><strong>Location:</strong> {{ user.location }}</p>
+        <p><strong>Bio:</strong> {{ user.bio }}</p>
+    </div>
 </body>
 </html>

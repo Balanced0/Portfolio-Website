@@ -67,6 +67,7 @@
   <body>
     <h1>Registration</h1>
     <form action="" method="POST">
+      {% csrf_token %}
       <label for="name">
         Enter Your Full Name:
         <input type="text" placeholder="Your Name" id="name" name="name" />
@@ -90,7 +91,7 @@
       </label>
       <label>
         Bio or Description:
-        <textarea
+        <textarea name="bio"
           placeholder="A short description about yourself, your work, or goals"
           rows="3"
           cols="40"
